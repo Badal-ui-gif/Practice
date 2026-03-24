@@ -4,7 +4,7 @@
 in stdio.h header file. We can use it to print output on the console.
  scanf()
  printf()
- string.h
+ string.h = header file for string functions
  strcmp()
  strrev()
  strlen()
@@ -19,4 +19,10 @@ int main()
     scanf("%d %d %d", &p, &r, &t);
     si = (p * r * t) / 100.0;
     printf("Simple Interest = %.2f", si);
+    awda();
+}
+void awda();
+void awda()
+{
+    printf("This is a function defined after the main function.");
 }
