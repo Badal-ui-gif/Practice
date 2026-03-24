@@ -8,7 +8,7 @@ float bal;
 };
 int main()
 {
-struct balance a[10];
+struct balance a[10], temp;
 int i;
 float greatest;
 for(i=0;i<10;i++)
@@ -22,11 +22,11 @@ for ( i = 0; i < 10; i++) // 10 customers 1st customer 0 to 9 a[0] = 1st custome
 for (int j = i + 1; j < 10; j++) // 2nd customer 1 to 9 a[1] = 2nd customer
 {if (a[i].bal < a[j].bal) // supposse a[0] = 100 and a[1] = 200 then 100 < 200
 {
-greatest = a[j].bal; // greatest = 200 and a[j] khali
-a[j].bal = a[i].bal; // a[j] = 100 and a[i] khali
-a[i].bal = greatest; // a[i] = 200 and greatest khali 
+temp = a[j]; // temp = 200 and a[j] khali
+a[j] = a[i]; // a[j] = 100 and a[i] khali
+a[i] = temp; // a[i] = 200 and temp khali 
 }
 }
 }
-printf("The name of the customer with the greatest balance is: %s and the greatest balance is %d",a[0].name, a[0].bal);
+printf("%s %s %f", a[0].name, a[0].add, a[0].bal);
 }

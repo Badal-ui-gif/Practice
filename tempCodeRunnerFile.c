@@ -1,0 +1,2 @@
+
+    printf("After swapping: 

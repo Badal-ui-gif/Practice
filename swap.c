@@ -17,5 +17,5 @@ int main() {
     swap(&num1, &num2);
     printf("After swapping: num1 = %d, num2 = %d\n", num1, num2);
 
-    return 0;
+    return 0; // &num1 = *a  *a = 5 if num1 =5
 }
